@@ -15,4 +15,6 @@ use App\Http\Controllers\Admin\ComicController as Controller;
 */
 
 Route::get('/', [Controller::class, 'index']);
+Route::get('/create', [Controller::class, 'create']) -> name ("create");
+Route::post('/', [Controller::class, 'store']) -> name ("store");
 Route::get('/{id}', [Controller::class, 'show']) -> name("show");
