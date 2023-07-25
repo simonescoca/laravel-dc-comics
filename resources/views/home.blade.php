@@ -36,8 +36,13 @@
                             </div>
                         </div>
                     @endforeach
+                    <div class="my_create-button-container">
+                        <a href="{{ route("create") }}">
+                            create a new comic
+                        </a>
+                    </div>
                 </div>
-                {{ $comics->links() }}
+                {{ $comics -> links() }}
             </div>
         </main>
         @vite("resources/js/app.js")
