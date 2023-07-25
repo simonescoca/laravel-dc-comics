@@ -1,12 +1,6 @@
-Oggi create un nuovo progetto Laravel 9 per gestire un archivio di fumetti, potete riutilizzare codice che avete gia' utilizzato.
-
-Milestone 1
-    Tramite gli appositi comandi artisan create un model con relativa migration e un resource controller.
-
-Milestone 2
-    Iniziate a definire le prime operazioni CRUD con le relative view:
-    index()
-    show()
+Oggi lavorate sulla stessa repo di ieri e completate le operazioni di:
+    create()
+    store()
 
 Bonus:
-    Creare il seeder per la tabella comics utilizzando il file in allegato.
+    Aggiungere le fillable e usare il metodo fill nel metodo store.
