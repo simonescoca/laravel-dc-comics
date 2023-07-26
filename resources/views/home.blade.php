@@ -32,6 +32,16 @@
                                     <a href="{{ route('show', $comic->id) }}" class="btn btn-primary">
                                         see more
                                     </a>
+                                    <a href="{{ route("edit", $comic->id) }}" class="btn btn-warning">
+                                        edit
+                                    </a>
+                                    <form action="{{ route("destroy", $comic -> id )}}" method="POST">
+                                        @csrf
+                                        @method("DELETE")
+                                        <button type="submit" class="btn btn-danger">
+                                            delete
+                                        </button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
