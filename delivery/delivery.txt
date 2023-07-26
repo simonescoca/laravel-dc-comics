@@ -1,6 +1,8 @@
 Oggi lavorate sulla stessa repo di ieri e completate le operazioni di:
-    create()
-    store()
+    edit()
+    update()
+    destroy()
 
 Bonus:
-    Aggiungere le fillable e usare il metodo fill nel metodo store.
+    Tramite javascript, quando l'utente clicca sul pulsante "delete",
+    chiedere conferma della cancellazione, prima di eliminare l'elemento.
