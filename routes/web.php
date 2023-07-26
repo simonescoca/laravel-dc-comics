@@ -14,7 +14,10 @@ use App\Http\Controllers\Admin\ComicController as Controller;
 |
 */
 
-Route::get('/', [Controller::class, 'index']);
-Route::get('/create', [Controller::class, 'create']) -> name ("create");
-Route::post('/', [Controller::class, 'store']) -> name ("store");
-Route::get('/{id}', [Controller::class, 'show']) -> name("show");
+Route::get('/', [Controller::class, 'index']) -> name ('home');
+Route::get('/create', [Controller::class, 'create']) -> name ('create');
+Route::post('/', [Controller::class, 'store']) -> name ('store');
+Route::get('/{id}/edit', [Controller::class, 'edit']) -> name ('edit');
+Route::put('/{id}', [Controller::class, 'update']) -> name ('update');
+Route::get('/{id}', [Controller::class, 'show']) -> name('show');
+Route::delete('/{id}', [Controller::class, 'destroy']) -> name ('destroy');
